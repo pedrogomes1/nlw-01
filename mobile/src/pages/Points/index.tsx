@@ -81,7 +81,7 @@ interface ResponseIBGE {
     function handleSelectedItem(id: number) {
       const alreadySelected = selectedItem.findIndex(item => item === id);
 
-      if(alreadySelected > 0) {
+      if(alreadySelected >= 0) {
         const filteredItems = selectedItem.filter(item => item !== id);
         setSelectedItem(filteredItems)
       } else {
