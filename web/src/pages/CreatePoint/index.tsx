@@ -1,5 +1,7 @@
 import React, { useEffect, useState, ChangeEvent, FormEvent } from 'react';
 import './styles.css'
+import 'react-toastify/dist/ReactToastify.css';
+import { toast } from 'react-toastify';
 import { Link, useHistory } from 'react-router-dom';
 import { FiArrowLeft } from 'react-icons/fi'
 import api from '../../services/api';
@@ -142,7 +144,7 @@ const CreatePoint = () => {
 
     await api.post('points', data)
 
-    alert('cadastrado')
+    toast.success('Cadastro realizado com sucesso!');
     history.push('/');
   }
 

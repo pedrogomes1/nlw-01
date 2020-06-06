@@ -25,6 +25,7 @@ celebrate({
     latitude: Joi.number().required(),
     longitude: Joi.number().required(),
     uf: Joi.string().required().max(2),
+    city: Joi.string().required(),
     items: Joi.string().required(),
   })
 }, {
