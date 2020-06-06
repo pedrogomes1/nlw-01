@@ -205,7 +205,7 @@ const CreatePoint = () => {
         <fieldset>
           <legend>
             <h2>Endereço</h2>
-            <span>Selecine o endereço no mapa</span>
+            <span>Selecione o endereço no mapa</span>
           </legend>
 
           <Map center={initialPosition} zoom={15} onClick={handleMapClick}>
