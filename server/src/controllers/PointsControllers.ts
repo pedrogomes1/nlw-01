@@ -61,7 +61,7 @@ class PointsControllers {
         return response.status(400).json({error: 'Ponto de coleta não encontrado'})
       }
 
-      const serialiazedItems = {
+      const points = {
           ...point,
           image_url: `http://192.168.0.133:3333/uploads/${point.image}`
         }
@@ -74,7 +74,7 @@ class PointsControllers {
 
 
       return response.json({
-        serialiazedItems,
+        points,
         items
       });
     }

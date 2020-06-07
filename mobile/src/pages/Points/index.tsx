@@ -35,7 +35,8 @@ interface ResponseIBGE {
     const [initialPosition, setInitialPosition] = useState<[number, number]>([0,0]);
 
     const route = useRoute();
-
+    const navigation = useNavigation();
+    
     const { city, uf } = route.params as ResponseIBGE;
 
 
@@ -88,7 +89,7 @@ interface ResponseIBGE {
         setSelectedItem([...selectedItem, id])
       }
     }
-  const navigation = useNavigation();
+  
   return (
     <>
       <View style={styles.container}>
@@ -114,7 +115,7 @@ interface ResponseIBGE {
             {points.map(point => (
               <Marker
                 key={String(point.id)}
-                onPress={() => navigation.navigate('Detail', {point_id: point.id})}
+                onPress={() => navigation.navigate('Detail', { point_id: point.id })}
                 style={styles.mapMarker}
                 coordinate={{
                   latitude: point.latitude,
