@@ -45,7 +45,7 @@ Criando o banco de dados:
 npm run knex:migrate
 npm run knex:seed
 
-nicie o servidor:
+Inicie o servidor:
 npm run dev
 
 # Para utilizar a versão web:
