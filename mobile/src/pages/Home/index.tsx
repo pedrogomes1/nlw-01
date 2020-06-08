@@ -190,6 +190,15 @@ const pickerSelectedStyles = StyleSheet.create({
     backgroundColor: '#fff',
     paddingRight: 30, 
     marginBottom: 30,
-  }
+  },
+  inputAndroid: {
+    fontSize: 16,
+    paddingVertical: 25,
+    paddingHorizontal: 20,
+    borderRadius: 4,
+    backgroundColor: '#fff',
+    paddingRight: 30, 
+    marginBottom: 30,
+  },
 })
 export default Home;

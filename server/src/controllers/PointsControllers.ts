@@ -63,7 +63,7 @@ class PointsControllers {
 
       const points = {
           ...point,
-          image_url: `http://192.168.0.133:3333/uploads/${point.image}`
+          image_url: `${process.env.APP_URL}/uploads/${point.image}`
         }
 
       const items = await knex('items')
