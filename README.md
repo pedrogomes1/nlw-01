@@ -38,6 +38,9 @@ git clone https://github.com/PedroGomes1/nlw-01.git
 cd nlw-01
 cd server
 
+** Crie um arquivo .env na raiz e copie o conteúdo do arquivo .env.example,
+ adicionando seu ip da rede para funcionar corretamente
+
 Instale as dependências:
 npm install
 
@@ -74,7 +77,7 @@ Inicie a aplicação mobile:
  
 OBS: Instale o aplicativo expo que esta disponível tanto na Google Play como na App Store,
 logo após escaneie o QR Code (com seu smartphone) gerado pela aplicação quando você inicia-la.
+Troque também o IP da baseURL dentro da pasta services > api.ts para o ip da sua rede local
 
 ````
-
 <b>Produzido por Pedro Gomes </b> :wave:
